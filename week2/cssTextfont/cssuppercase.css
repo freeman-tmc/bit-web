@@ -1,0 +1,21 @@
+#first {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: left;
+    letter-spacing: 5px;
+    
+}
+#second {
+    text-transform: lowercase;
+    text-decoration: line-through;
+    text-align: right;
+    line-height: 200%;
+}
+
+#third {
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 7px -2px 15px rgba(57, 64, 150, 0.55);
+}

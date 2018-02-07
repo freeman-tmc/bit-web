@@ -1,0 +1,29 @@
+#first {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#first q {
+    font-family: Courier New, Courier, monospace;
+}
+
+#second {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#third {
+    font-family: Dhurjati-Regular;
+    font-size: 20px;
+}
+
+#second q {
+    font-family: 'BioRhyme Expanded', serif;
+}
+
+#third q {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'Dhurjati-Regular';
+    src: url('fonts/Dhurjati/Dhurjati-Regular.ttf')
+}
