@@ -1,0 +1,59 @@
+#first{
+background-color: aqua;
+width: 200px;
+height: 300px;
+}
+
+#second{
+background-color: red;
+width: 200px;
+height: 300px;
+visibility: hidden;
+
+}
+
+#third{
+background-color: green;
+width: 200px;
+height: 300px;
+}
+
+p{
+    display: inline-block;
+}
+#third:hover{
+    visibility: hidden;
+}
+h1{
+    font-family: 'Nanum Brush Script', cursive;
+    width:960px;
+   
+    text-align: center;
+    padding:50px;
+    margin: 50px auto 50px auto;
+    padding: 50px auto 50px auto;
+    background-color: darkred;
+    box-shadow: 0 0 15px #777777;
+    border-radius: 25px;
+}
+
+
+.circle {
+    list-style-type: circle;
+}
+
+.squares {
+    list-style-type: square;
+}
+
+.upper-alpha {
+    list-style-type: upper-alpha;
+}
+
+.roman {
+    list-style-type: upper-roman;
+}
+
+#image-marker {
+    list-style-image: url(icon.png);
+}
