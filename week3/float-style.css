@@ -14,7 +14,7 @@
     margin: 5px 0;
 }
 
-ul li {
+header ul li {
     float: right;
     list-style: none;
     color: aliceblue;
@@ -22,13 +22,13 @@ ul li {
 padding: 10px;
 }
 
-ul {
+ header ul {
    overflow: hidden;
    background-color: rgb(160, 52, 52);
    font-size: 20px;
 }
 
-.info {
+aside {
     background-color:rgb(255, 208, 0);
     width: 280px;
     float: right;
@@ -37,7 +37,11 @@ ul {
     margin: 5px;
 }
 
-p {
+aside p {
+    padding: 5px;
+}
+
+article {
     width: 300px;
     float: left;
     margin: 5px;
@@ -51,7 +55,7 @@ img {
 #clear-left {
     clear: left;
 }
-#footer {
+footer {
 background-color: #365d7e;
 padding: 15px;
 margin: 5px auto;
