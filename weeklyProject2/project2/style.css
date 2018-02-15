@@ -1,0 +1,230 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header div{
+    background-image: url(img/banner3.jpg);
+    background-size: cover;
+    height: 200px;
+    text-align: center;
+}
+
+main section img {
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+}
+
+header div h1 {
+    color: white;
+    
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+header div p {
+    background: lightblue;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+header h1:nth-child(2) {
+    text-align: center;
+    margin-top: 30px;  
+    margin-bottom: 10px; 
+}
+
+header h1 span {
+    color: orange;
+    border-top: 4px solid grey;
+    border-left: 4px solid grey;
+    border-bottom: 4px solid grey;
+}
+
+nav ul {
+    background: lightblue;
+    text-align: center;
+    width: 92%;
+    margin: 0 auto;
+    list-style: none;
+}
+
+nav ul a {
+    display: block;
+    padding: 8px 0;
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    width: 86%;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid black;
+} 
+
+section h3 {
+    text-align: center;
+    color:skyblue;
+}
+
+section li {
+    list-style-image: url('img/arrow_bullet.png');
+    padding: 6px;
+    font-size: 0.8em;
+} 
+
+section p {
+    font-size: 0.8em;
+    margin: 15px 0;
+}
+
+article {
+    width: 80%;
+    margin: 15px auto;
+    background: lightblue;
+    overflow: hidden;
+
+}
+
+ section article img {
+    border-radius: 50%;
+    width: 15%;
+    margin-left: 15px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+article div {
+    float: left;
+    width: 40%;
+    margin-top: 45px;
+    margin-left: 15px;
+}
+
+article p {
+    clear: left;
+    width: 92%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: white;
+}
+
+
+/* media queries */
+
+@media only screen and (min-width: 768px) {
+
+    header div{
+        height: 450px;
+        position: relative;
+    }
+
+    header div h1 {
+        padding-top: 200px;
+        font-size: 200%;
+        width: 92%;
+    }
+
+    header>h1 {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+    }
+
+    
+    nav ul {
+        width: 45%;
+        position: absolute;
+        right: 0%;
+        top: 0; 
+        background: transparent; 
+    }
+    
+    nav ul li {
+        display: inline-block;  
+    }
+
+    nav ul li a {
+        padding: 16px 5px;
+    }
+
+
+
+
+    #about div:nth-child(3) {
+        width: 45%;
+        float: left;
+        clear: left;
+    }
+
+    #about div:nth-child(2) {
+        float: left;
+        width: 45%;
+
+    }
+
+
+
+
+
+
+    
+    /*section h2 {
+        text-align: center;
+        width: 25%;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        border-bottom: 3px solid black;
+    } 
+    
+    section h3 {
+        text-align: center;
+        color:skyblue;
+    }
+    
+    section li {
+        list-style-image: url('img/arrow_bullet.png');
+        padding: 6px;
+        font-size: 0.8em;
+    } 
+    
+    section p {
+        font-size: 0.8em;
+        margin: 15px 0;
+    }*/
+
+    main section img {
+        display: block;
+        width: 45%;
+        margin: 30px 0;
+        float: left;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+}
