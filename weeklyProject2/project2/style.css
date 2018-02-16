@@ -84,11 +84,12 @@ section h3 {
 section li {
     list-style-image: url('img/arrow_bullet.png');
     padding: 6px;
-    font-size: 0.8em;
+    list-style-position: inside;
+    font-size: 0.9em;
 } 
 
 section p {
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin: 15px 0;
 }
 
@@ -97,10 +98,10 @@ article {
     margin: 15px auto;
     background: lightblue;
     overflow: hidden;
-
 }
 
  section article img {
+    border: 3px solid white;
     border-radius: 50%;
     width: 15%;
     margin-left: 15px;
@@ -161,11 +162,11 @@ article p {
     nav ul li a {
         padding: 16px 5px;
     }
+    #about {
+         overflow: hidden;
+     }
 
-
-
-
-    #about div:nth-child(3) {
+    #about div:nth-child(4) {
         width: 45%;
         float: left;
         clear: left;
@@ -174,39 +175,7 @@ article p {
     #about div:nth-child(2) {
         float: left;
         width: 45%;
-
     }
-
-
-
-
-
-
-    
-    /*section h2 {
-        text-align: center;
-        width: 25%;
-        margin: 0 auto;
-        margin-top: 40px;
-        margin-bottom: 10px;
-        border-bottom: 3px solid black;
-    } 
-    
-    section h3 {
-        text-align: center;
-        color:skyblue;
-    }
-    
-    section li {
-        list-style-image: url('img/arrow_bullet.png');
-        padding: 6px;
-        font-size: 0.8em;
-    } 
-    
-    section p {
-        font-size: 0.8em;
-        margin: 15px 0;
-    }*/
 
     main section img {
         display: block;
@@ -214,17 +183,75 @@ article p {
         margin: 30px 0;
         float: left;
     }
-    
 
+    article {
+        width: 48%;
+        float: left;
+    }
 
+    main section:nth-child(2) {
+        overflow: hidden;
+    }
 
+     main article:nth-child(3) {
+        float: right; 
+    }
 
+    section article img {
+        width: 25%;
+    }
+}
 
+@media only screen and (min-width: 1200px) {
 
+    #about {
+        overflow: hidden;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
 
+   #about div:nth-child(4) {
+       width: 30%;
+       float: right;
+       clear: none;
+   }
 
+   #about div:nth-child(2) {
+       float: left;
+       width: 30%;
+   }
 
+   main section img {
+       display: block;
+       width: 30%;
+       margin: 30px 0;
+       float: left;
+       margin-left: 5%;
+   }
 
+   section h2 {
+       width: 30%;
+   }
 
+   article {
+    width: 31%;
+    }
+
+    main section:nth-child(2) {
+        overflow: hidden;
+    }
+
+    main article:nth-child(3) {
+        float: left;
+        margin-left: 3.5%; 
+    }
+
+    section article img {
+        width: 25%;
+    }
+
+    main article:nth-child(4) {
+        float: right;
+    }
 
 }
