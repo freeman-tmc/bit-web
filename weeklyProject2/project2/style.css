@@ -123,9 +123,121 @@ article p {
     margin-bottom: 30px;
     color: white;
 }
+ /* get in touch section */
+
+#get-in-touch img {
+    display: inline-block;
+    width: 3%;
+    margin: 0 5% 0 0;   
+}
+
+#get-in-touch div:nth-child(3) img {
+    margin: 20px 10px 0 10px;
+}
+
+#get-in-touch h3 {
+    color: white;
+    font-weight: 500;
+    
+}
+
+#get-in-touch p {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;  
+}
+
+#get-in-touch div {
+    height: 160px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#get-in-touch div:nth-child(2) {
+    background: rgb(0, 204, 136);
+    color: white;
+}
+
+#get-in-touch div:nth-child(3) {
+    background: rgb(248, 35, 166);
+}
+
+#get-in-touch div:nth-child(4) {
+    background: rgb(1, 89, 160);
+}
+
+#get-in-touch div:nth-child(5) {
+    background: rgb(20, 186, 192);
+    
+}
+
+#get-in-touch div:nth-child(5) img {
+    width: 60%;
+    height: 100%;
+    margin-right: 0;
+}
+
+/* mail us section */
+
+section input {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    margin: 8px 0;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+
+section textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+section button {
+    background: orange;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/**** footer style ***/
+
+footer {
+    background: black;
+    color: white;
+    padding: 20px 0;
+    font-size: 0.8em;
+}
+
+footer ul {
+    width: 80%;
+    background: transparent;
+}
+
+footer li {
+    display: inline-block;
+}
+
+footer li a {
+    display: block;
+    margin: 10px 8px;
+}
+
+footer p {
+    text-align: center;
+    margin: 20px 10px;
+}
 
 
-/* media queries */
+/**** media queries ****/
+
+/** tablet layout **/
 
 @media only screen and (min-width: 768px) {
 
@@ -181,6 +293,7 @@ article p {
         display: block;
         width: 45%;
         margin: 30px 0;
+        margin-left: 5%;
         float: left;
     }
 
@@ -200,7 +313,61 @@ article p {
     section article img {
         width: 25%;
     }
-}
+
+    /* get in touch section */
+
+        
+    #get-in-touch img {
+        display: inline;
+        width: 3%;
+        margin-top: 0 5% 0 0;
+        float: none;  
+    }
+
+    #get-in-touch p {  
+        width: 90%;    
+    }
+
+    #get-in-touch div {
+        float: left;
+        width: 50%;
+    }
+
+    #get-in-touch div:nth-child(5) img {
+        float: none;
+        width: 200px;
+        height: 100%;
+    }
+
+    #get-in-touch div:nth-child(6) {
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+
+    /* mail us section */
+
+
+    section input {
+        float: left;
+        width: 32%;
+    }
+
+    form input:nth-child(2) {
+        margin: 8px 2%;
+    }
+    
+    /* footer */
+
+    
+    footer ul {
+        position: static;
+        width: 80%;
+    }
+    
+
+/** desktop layout **/
 
 @media only screen and (min-width: 1200px) {
 
@@ -252,6 +419,34 @@ article p {
 
     main article:nth-child(4) {
         float: right;
+    }
+
+    /* get in touch section */
+
+    
+    #get-in-touch p {
+        width: 80%; 
+    }
+
+    #get-in-touch div {
+        width: 25%;
+    }
+
+    #get-in-touch div:nth-child(6) {
+        height: 250px;
+    }
+
+    #get-in-touch div:nth-child(6) iframe {
+    
+        height: 250px;
+
+    }
+
+    /* mail us section */
+
+
+    main section:nth-child(4) {
+        max-width: 1000px;
     }
 
 }
