@@ -1,0 +1,78 @@
+a {
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    &.important {
+        font-weight: bold;
+    }
+    &:active {
+        background-color: yellow;
+    }
+    &:visited {
+        background-color: orange;
+    }
+}
+
+@mixin backgroundColor($i) {
+    @if $i==1 {
+        background-color: blue;
+    }
+    @else if $i==2 {
+        background-color: red;
+    }
+    @else if $i==3 {
+        background-color: green;
+    }
+    @else if $i==4 {
+        background-color: orange;
+    }
+}
+
+@for $i from 1 through 4 {
+    p:nth-of-type(#{$i}) {
+        font-size: 16px + ($i - 1) * 2px;
+        padding: 5px + ($i - 1) * 5px;
+        @include backgroundColor($i);
+    }
+}
+
+@function wdth($content, $padding, $border) {
+    @return $content + $padding * 2 + $border * 2;
+}
+
+
+div {
+    p:first-child {
+        box-sizing: border-box;
+        padding: 20px;
+        border: 5px solid black;
+        width: wdth(150px, 20px, 5px); 
+    }
+    p:nth-child(2) {
+        box-sizing: content-box;
+        padding: 20px;
+        border: 5px solid black;
+        width: 150px;
+    }
+   
+}
+
+
+
+
+
+$table-width: 700px;
+
+@function calc($n) {
+    @return $table-width / $n;
+}
+
+table {
+    width: $table-width;
+    border-collapse: collapse;
+    td {
+        width:calc(4);
+        background-color: orange;
+        
+    }
+}
