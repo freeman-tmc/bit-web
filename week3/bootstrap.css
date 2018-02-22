@@ -1,0 +1,17 @@
+img:first-of-type{
+    padding: 0;
+}
+
+img:nth-of-type(2){
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+aside>div{
+    background-color: yellow;
+    padding: 15px;
+}
+nav {
+   text-align: center; 
+}
