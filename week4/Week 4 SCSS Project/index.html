@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
@@ -14,32 +15,34 @@
 <body>
 
     <div class="container-fluid">
-        <header class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">BIT STUDENT</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    MENU
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <div class="header-row">
+            <header class="container">
+                <nav id="navigacija" class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">BIT STUDENT</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        MENU
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item ml-auto">
+                                <a class="nav-link" href="#">Portfolio
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ml-auto">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item ml-auto">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
 
         <section id="masthead">
             <div class="container">
@@ -53,8 +56,10 @@
             </div>
         </section>
 
-        <section class="container">
+        <section id="portfolio" class="container">
             <div class="row">
+                    <h1 id="black" class="col-12">PORTFOLIO</h1>
+
                 <div class="col-md-6 col-lg-4">
                     <img src="img/cabin.png" alt="">
                 </div>
@@ -79,16 +84,14 @@
             <div class="container">
                 <div class="row">
                     <h1 class="col-12">ABOUT</h1>
-                    <p id="about2" class="col-lg-4 offset-lg-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis necessitatibus distinctio
+                    <p id="about2" class="col-lg-5 offset-lg-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis necessitatibus distinctio
                         velit iste sit quibusdam possimus fuga assumenda quis iure corporis ab suscipit ratione, debitis
-                        illo mollitia ipsa doloribus optio? A nulla reprehenderit temporibus ipsam eius magnam consectetur,
-                        eaque enim quis non ea facilis perferendis harum assumenda minus ab.</p>
-                    <p id="about3" class="col-lg-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis necessitatibus distinctio
+                        illo mollitia ipsa doloribus optio?</p>
+                    <p id="about3" class="col-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat blanditiis necessitatibus distinctio
                         velit iste sit quibusdam possimus fuga assumenda quis iure corporis ab suscipit ratione, debitis
-                        illo mollitia ipsa doloribus optio? A nulla reprehenderit temporibus ipsam eius magnam consectetur,
-                        eaque enim quis non ea facilis perferendis harum assumenda minus ab.</p>
+                        illo mollitia ipsa doloribus optio?</p>
                 </div>
-                <button type="button" class="col-2 offset-5 btn btn-outline-primary">Primary</button>
+                <button type="button" class=" col-4 offset-4 col-md-2 offset-md-5 btn btn-outline-primary"><i class="fas fa-info-circle"></i> Find Out More</button>
             </div>
         </section>
 
@@ -96,32 +99,20 @@
             <div class="container">
                 <div class="row">
                     <h1 class="col-12">CONTACT ME</h1>
-                    <form action="" method="POST" class="col-lg-4 offset-lg-4">
+                    <form action="" method="POST" class="col-lg-6 offset-lg-3">
                         <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">Name</span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
                         </div>
                         <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">Email Address</span>
-                            </div>
-                            <input type="email" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="email" class="form-control" placeholder="Email Address" aria-label="Username" aria-describedby="basic-addon1">
                         </div>
                         <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">Phone Number</span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control" placeholder="Phone Number" aria-label="Username" aria-describedby="basic-addon1">
                         </div>
                         <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">Message</span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            <textarea class="form-control" rows="5" placeholder="Message"></textarea>
                         </div>
-                        <button type="button" class="col-2 offset-5 btn btn-outline-primary">Send</button>
+                        <button type="button" class="col-2 btn btn-outline-primary">Send</button>
                     </form>
                 </div>
         </section>
@@ -129,18 +120,23 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <h3>LOCATION</h3>
-                        <p>Centar za obrazovanje<span>BIT TECHOLOGY</span>Nemanjina4/I, Beograd</p>
+                        <p>Centar za obrazovanje
+                            <span>BIT TECHOLOGY</span>Nemanjina4/I, Beograd</p>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <h3>AROUND THE WEB</h3>
+                        <p>
+                            <i class="fab fa-twitter"></i>
+                        </p>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <h3>MORE DETAILS</h3>
-                        <p>We believe that the future of Serbiia firmly depends on our ability to scale the number of individuals involved in the IT sector. That is why we founded BIT.</p>
+                        <p>We believe that the future of Serbiia firmly depends on our ability to scale the number of individuals
+                            involved in the IT sector. That is why we founded BIT.</p>
                     </div>
-                    <p class="col-lg-4 offset-lg-4">Copyright</p>
+                    <p class="col-md-4 offset-md-4">Copyright</p>
                 </div>
             </div>
         </footer>
