@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Za EVENTS spremni</title>
+
+    <style>
+        body {
+            background-color: black;
+            text-align: center;
+        }
+
+        .class2 {
+            background-color: teal;
+        }
+
+        #input1 {
+            background-color: brown;
+            color: white;
+            border-radius: 5%;
+            width: 180px;
+            height: 60px;
+        }
+
+        #input2 {
+            background-color: orange;
+            color: white;
+            border-radius: 5%;
+            width: 210px;
+            height: 60px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <input id="input1" type="button" value="Toggle Background" onclick="bgChange();">
+    <br>
+    <br>
+    <input id="input2" type="button" value="Turn On Automatic Toggle" onclick="toggleColor();">
+
+
+    <script>
+
+        function bgChange() {
+            document.querySelector('body').classList.toggle('class2');
+
+        }
+        function toggleColor() {
+            var a = document.querySelector('input:nth-child(4)');
+         
+            if (a.getAttribute('value') == 'Turn On Automatic Toggle') {
+                a.setAttribute('value', 'Turn Off Automatic Toggle');
+                b = setInterval(bgChange, 1000);
+            } else {
+                clearInterval(b);
+                a.setAttribute('value', 'Turn On Automatic Toggle');
+            }
+        }
+
+       
+    </script>
+
+</body>
+
+</html>
