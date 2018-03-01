@@ -1,0 +1,19 @@
+body {
+    height: 98.4vh;
+    background-image: url('img/bg.jpg');
+    background-color: #0212fe;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-position-x: 100px;
+}
+
+#mario {
+    height: 180px;
+    position: absolute;
+    right: 50%;
+    bottom: 83px;
+    display: block;
+    
+    
+}
+
