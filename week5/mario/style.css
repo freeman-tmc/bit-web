@@ -3,17 +3,22 @@ body {
     background-image: url('img/bg.jpg');
     background-color: #0212fe;
     background-repeat: repeat-x;
-    background-position: bottom;
-    background-position-x: 100px;
+    background-position: 10px bottom;
+
 }
 
-#mario {
+#mario, #running, #jumping {
     height: 180px;
     position: absolute;
     right: 50%;
     bottom: 83px;
-    display: block;
-    
-    
 }
 
+
+#running {
+    display: none;
+}
+
+#jumping {
+    display: none;
+}
