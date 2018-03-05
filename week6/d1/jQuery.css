@@ -1,0 +1,15 @@
+.podvuceno {
+    border-bottom: 1px solid black;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.active {
+    color: green;
+}
+
+.redbg {
+    background: #8d2424;
+}
